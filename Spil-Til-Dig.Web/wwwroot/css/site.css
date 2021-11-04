@@ -1,0 +1,369 @@
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+body {
+    background-color: #545C6B;
+}
+
+a, .btn-link {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.content {
+    padding-top: 1.1rem;
+}
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid red;
+}
+
+.validation-message {
+    color: red;
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+.col-sm-5 {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.GameCard {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.GameCard-Name {
+    font-weight: 600;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    width: 75%;
+}
+
+.GameCard-Price {
+    display: block;
+    width: 75%;
+    color: #bfbfbf;
+    font-size: 85%;
+}
+
+.GameCard-Price, .GameCard-Name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.GameCard-Caption {
+    position: relative;
+    border: 1px solid #ECECEC;
+    background: white;
+    padding: 2px 10px 7px 10px;
+    font-size: 14px;
+    color: #555555;
+    min-height: 50px;
+}
+
+.GameCard-Aside {
+    position: absolute !important;
+    bottom: 5px;
+    right: 1px;
+    font-size: 14px;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+.Game_cover {
+    height: 0;
+    padding-bottom: 133.33333333%;
+    position: relative;
+}
+
+    .Game_cover > img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+    }
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.GameCard-Size {
+    width: 25%;
+    max-width: 25%;
+    min-width: 175px;
+}
+
+.gameCard-Overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 40%;
+    background: linear-gradient( 135deg, rgba(145,71,255,0.9), rgba(43,187,228,0.9));
+}
+
+    .gameCard-Overlay a {
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+.Game_cover:hover + .gameCard-Overlay {
+    display: block;
+}
+
+.gameCard-Overlay:hover {
+    display: block;
+}
+
+.panel-heading :before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: right;
+    transition: all 0.5s;
+}
+
+.panel-heading[aria-expanded="true"] :before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.cart {
+    position: relative;
+}
+
+.cartList {
+    background-color: #b19cd9;
+    height: 250px;
+    width: 380px;
+    border: 2px solid red;
+    right: 0;
+    position: absolute;
+    transition: 1s all;
+    transform: scale(0);
+    transform-origin: 100% 0%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cart:hover > .cartList {
+    transform: scale(1);
+}
+
+.cartSummary {
+    background-color: #b19cd9;
+}
+
+.cartSummaryHeader {
+    background-color: rebeccapurple;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cartSummaryFooter {
+    padding: 0 15px 15px;
+    position: relative;
+    z-index: 0;
+}
+
+.cartSummaryItems {
+}
+
+.cartSummaryPrice {
+}
+
+.cartSummaryBody {
+    padding-top: 10px;
+}
+
+.cartSummaryItems.cartSummaryPrice ul cartFullPrice, .cartSummaryItems.cartSummaryPrice ul cartFullDiscont, .cartSummaryItems.cartSummaryPrice ul cartTotalPrice {
+    margin-bottom: 20px;
+}
+
+.cartSummaryItems.cartSummaryPrice ul li {
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.cartSummaryItems ul > li {
+    display: block;
+    float: none;
+    margin-left: 0;
+    position: relative;
+}
+
+.checkout {
+    padding: 5px;
+    background-color: #F0D9FF;
+    border-radius: 10px;
+}
+
+.checkoutCompleteKey {
+}
+
+.checkoutCompleteName {
+}
+
+.gameInfo {
+    background-color: #F3F1F5;
+}
+.gameInfoBox {
+    background-color: #F38BA0;
+    padding: 10px;
+    
+}
+
+.gameInfoName {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.gameInfoBox > h3 {
+    font-size: 14px;
+    border-bottom: 1px solid #494a4f;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    margin-bottom: 0;
+}
+
+.gameInfoLeftCol {
+    border-right: 1px solid #494a4f;
+    
+}
+
+.gameInfoRighttCol {
+    border-left: 1px solid #494a4f;
+}
+
+.gameInfoLeftCol, .gameInfoRighttCol {
+    font-size: 12px;
+    letter-spacing: .8px;
+    margin-top: 20px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-weight: 300;
+    display: flex;
+    word-wrap: break-word;
+    justify-content: center;
+}
+
+.gameInfo-Card {
+    background-color: #b19cd9;
+    margin-bottom: 10px;
+}
+
+    .gameInfo-Card > * {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+.gameInfo-Card-Header {
+    background-color: #6B7AA1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.gameInfo-Card-Body {
+    padding-top: 10px;
+}
+
+.gameInfo-Card-Price {
+}
+
+    .gameInfo-Card-Price ul > li {
+        line-height: 1;
+        margin-bottom: 15px;
+        float: none;
+        margin-left: 0;
+        position: relative;
+    }
+.gameInfo-Card-Buy {
+}
+
+.navbar-content-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*.navbar {
+    top: 0;
+    z-index: 1;
+}*/
+
+.cursor-click {
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .cartSummaryBody {
+        display: block !important;
+        padding: 10px 15px 12px 15px;
+    }
+
+    .cartSummaryItems.cartSummaryPrice ul cartFullPrice, .cartSummaryItems.cartSummaryPrice ul cartFullDiscont, .cartSummaryItems.cartSummaryPrice ul cartTotalPrice {
+        margin-bottom: 15px;
+    }
+
+    .cartSummaryFooter {
+        padding: 0 9px 15px;
+    }
+}
+
+.mat-paginator {
+    background-color: inherit !important; 
+}
+
+.mat-paginator-container {
+    justify-content: center !important;
+    -ms-flex-pack: center !important;
+}
+
+
